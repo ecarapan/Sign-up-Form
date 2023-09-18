@@ -9,41 +9,43 @@
 </head>
 <body>
   <div class="graphic">
-      <div class="logo"></div>
+      <div class="logo">
+        <h1>Euro Journey</h1>
+      </div>
       <p>
         Photo by <a href="https://unsplash.com/@gecko81de" target="_blank">Patrick Baum</a> on 
         <a href="https://unsplash.com/" target="_blank">Unsplash</a>
       </p>
   </div>
   <div class="form">
-    <div>
-      <p>Explore castles all around Europe! Sign up <em>today</em> to get started.</p>
+    <div class="description">
+      <h1>Explore castles all around Europe! Sign up <em>today</em> to get started.</h1>
     </div>
     <form action="" method="post">
-      <div>
+      <div class="content">
         <h1>Let's do this!</h1>
-
-        <label for="first_name">First Name</label>
-        <input type="text" name="first_name" id="first_name" required>
-
-        <label for="last_name">Last Name</label>
-        <input type="text" name="last_name" id="last_name" required>
-
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
-
-        <label for="phone_num">Phone Number</label>
-        <input type="tel" name="phone_num" id="phone_num">
-
-        <label for="password">Phone Number</label>
-        <input type="password" name="password" id="password">
-
-        <label for="confirm_pass">Phone Number</label>
-        <input type="password" name="confirm_pass" id="confirm_pass">
+        <div class="info">
+          <div class="left">
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+          </div>
+          <div class="right">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name" required>
+            <label for="phone_num">Phone Number</label>
+            <input type="tel" name="phone_num" id="phone_num">
+            <label for="confirm_pass">Confirm Password</label>
+            <input type="password" name="confirm_pass" id="confirm_pass">
+          </div>
+        </div>
       </div>  
-      <div>
+      <div class="footer">
         <input type="submit" value="Create Account">
-        <p>Already have an account? <a href="">Log in</a></p>
+        <h1>Already have an account? <a href="">Log in</a></h1>
       </div>
     </form>
   </div>

@@ -9,7 +9,6 @@ body {
   display: flex;
   width: 100vw;
   height: 100vh;
-  border: 2px solid red
 }
 
 .graphic {
@@ -19,23 +18,28 @@ body {
   background-position: center;
   width: 50%;
   
-  border: solid 2px red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
-  font-family: Arial, sans-serif;
   color: white;
 }
 
 .graphic .logo {
   width: 100%;
   height: 15%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   margin-top: 200px;
-  opacity: 0.6;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: white;
+  font-family: serif, sans-serif;
 }
+
 .graphic p {
   margin-bottom: 10px;
 }
@@ -46,8 +50,94 @@ body {
 
 .form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: 100vw;
+  font-family: Arial, sans-serif;
 }
 
+.form .description {
+  font-size: 1em;
+  font-weight: 100;
+  background-color: rgb(248, 247, 247);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
 
+.form form {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
 
+.form form .content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  box-shadow: 0px 3px 10px rgba(158, 148, 148, 0.5);
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.form form .content .info {
+  display: flex;
+  margin-top: 30px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.content .info .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 75px;
+} 
+
+.content .info .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+} 
+
+.content input {
+  border: 0.5px solid rgb(219, 215, 215);
+  border-radius: 5px;
+  height: 30px;
+  width: 250px;
+  margin-top: -20px;
+}
+
+.form form .footer {
+  background-color: rgb(248, 247, 247);
+  flex: 1;
+  padding-left: 40px;
+  padding-top: 30px;
+
+}
+
+.footer input {
+  width: 250px;
+  height: 60px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(77, 119, 77);
+  box-shadow: 0px 4px 5px rgba(158, 148, 148, 0.5);
+  color: white;
+  font-weight: 100;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+
+.footer h1 {
+  font-size: 1.2em;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(77, 119, 77);
+}
